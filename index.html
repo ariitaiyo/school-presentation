@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <title>関連曲検索サイト</title>
+</head>
+<body>
+    <h1 class="title">DAM 関連曲検索サイト</h1>
+    <div class="input-container">
+        
+        <input class="textreq" type="text" id="requestNoInput" placeholder="選曲番号を入力 デフォルトは5277-09(怪獣の花唄)">
+        <button class="submit-songs" onclick="getRecommendedSongs()">検索</button>
+    </div>
+    <div id="result">
+        
+        <h2 id="desc">選曲番号を入力すればそれに関連した曲(同アーティスト・同ジャンル)が表示されます</h2>
+        <h3>例一覧</h3>
+        <ul>
+            <li>怪獣の花唄:5277-09</li>
+            <li>晩餐歌:5476-97</li>
+            <li>マリーゴールド:5171-36</li>
+        </ul>
+    </div>
+</body>
+</html>
