@@ -1,0 +1,261 @@
+.title{
+    text-align: center;
+}
+.card-body {
+    padding: 0 1.5rem;
+}
+
+.card-text {
+    font-size: .8rem;
+    text-align:center;
+    text-decoration: none;
+}
+.card-header {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.submit-songs{
+    cursor: pointer;
+    border: none;
+    background: #3879D9;
+    color: #fff;
+    height: 100%;
+    width: 10%
+
+
+}
+
+ul{
+    padding: 0;
+    position: relative;
+}
+  
+ul li{
+    width: 200px;
+    background: #f1f8ff;/*背景色*/
+    margin-bottom: 3px;/*下のバーとの余白*/
+    line-height: 1.5;
+    padding: 0.5em;
+    list-style-type: none!important;/*ポチ消す*/
+}
+@media screen and (min-width:1200px){
+    .song{
+        border: solid 1px black;
+    }
+    .card {
+        margin: 1rem auto;
+        width: 400px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,.2);
+    }
+    .card-content {
+        background-color: #fff;
+        box-shadow: 0 0 0px rgba(0, 0, 0, .16);
+        color: #212121;
+        text-decoration: none;
+        margin-left:10px
+    }
+    .card-title {
+        padding: 1rem 1.5rem 0;
+        padding-left: 10px;
+        margin-left: 10px;
+        font-size: 1.6rem;
+        order: 1;
+        font-weight: bold;
+        text-decoration: none;
+        /*線の種類（実線） 太さ 色*/
+        border-bottom: solid 5px black;  
+    } 
+    
+    .song-list{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .zenkaku-medium{
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .zenkaku-bold{
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .textreq{
+        text-align: center;
+        font-size: 16px;
+        width: 100%; /*flexの中で100%広げる*/
+        background-color: #ddd;
+        border: none; /*枠線非表示*/
+        outline: none; /*フォーカス時の枠線非表示*/
+        box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+    }
+    .input-container{
+        margin-left:auto;
+        margin-right: auto;
+        display: flex; /*アイコン、テキストボックスを調整する*/
+        align-items: center; /*アイコン、テキストボックスを縦方向の中心に*/
+        justify-content: center; /*アイコン、テキストボックスを横方向の中心に*/
+        height: 50px;
+        width: 50%;
+        background-color: #ddd;
+    }
+    .artist-sp{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:1199px) {
+    .song{
+        border: solid 1px black;
+    }
+    .card {
+        margin: 1rem auto;
+        width: 350px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,.2);
+    }
+    .card-content {
+        background-color: #fff;
+        box-shadow: 0 0 0px rgba(0, 0, 0, .16);
+        color: #212121;
+        text-decoration: none;
+        padding-left: 10px;
+    }
+  
+    .card-title {
+        padding: 1rem 1.5rem 0;
+        padding-left: 10px;
+        margin-left: 10px;
+        font-size: 1.6rem;
+        order: 1;
+        font-weight: bold;
+        text-decoration: none;
+        /*線の種類（実線） 太さ 色*/
+        border-bottom: solid 5px black;
+    }
+    .song-list{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .zenkaku-medium{
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .zenkaku-bold{
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .textreq{
+        text-align: center;
+        font-size: 16px;
+        width: 100%; /*flexの中で100%広げる*/
+        background-color: #ddd;
+        border: none; /*枠線非表示*/
+        outline: none; /*フォーカス時の枠線非表示*/
+        box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+    }
+    .input-container{
+        margin-left:auto;
+        margin-right: auto;
+        display: flex; /*アイコン、テキストボックスを調整する*/
+        align-items: center; /*アイコン、テキストボックスを縦方向の中心に*/
+        justify-content: center; /*アイコン、テキストボックスを横方向の中心に*/
+        height: 50px;
+        width: 50%;
+        background-color: #ddd;
+    }
+    .artist-sp{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:749px) {
+    #desc{
+        display: none;
+    }
+    body{
+        text-align: center;
+    }
+    .artist{
+        display: none;
+    }
+    .song{
+        border: solid 1px black;
+    }
+    .card {
+        margin: 1rem auto;
+        width: 300px;
+        overflow: hidden;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,.2);
+    }
+    .card-content {
+        background-color: #fff;
+        box-shadow: 0 0 0px rgba(0, 0, 0, .16);
+        color: #212121;
+        text-decoration: none;
+    }
+    .card-title {
+        margin-top: -10px;
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+        order: 1;
+        font-weight: bold;
+        text-decoration: none;
+        /*線の種類（実線） 太さ 色*/
+        border-radius: 3px;
+        border-bottom: solid 3px black;      
+    } 
+    
+    .song-list{
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr;
+    }
+    .zenkaku-medium{
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .zenkaku-bold{
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .textreq{
+        text-align: center;
+        font-size: 16px;
+        width: 100%; /*flexの中で100%広げる*/
+        background-color: #ddd;
+        border: none; /*枠線非表示*/
+        outline: none; /*フォーカス時の枠線非表示*/
+        box-sizing: border-box; /*横幅の解釈をpadding, borderまでとする*/
+    }
+    .input-container{
+        margin-left:auto;
+        margin-right: auto;
+        display: flex; /*アイコン、テキストボックスを調整する*/
+        align-items: center; /*アイコン、テキストボックスを縦方向の中心に*/
+        justify-content: center; /*アイコン、テキストボックスを横方向の中心に*/
+        height: 50px;
+        width: 70%;
+        background-color: #ddd;
+    }
+    .artist-sp{
+        text-align: center;
+        display: block;
+        font-size: 12px;
+        font-family: "Zen Kaku Gothic New", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+}
